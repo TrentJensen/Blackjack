@@ -1,0 +1,34 @@
+﻿<Window x:Class="BlackJack.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlackJack"
+        mc:Ignorable="d"
+        Title="MainWindow" Background="Green"  Height="796.5" Width="924">
+    <Grid Margin="0,0,42,3">
+        <Button x:Name="btnStartGame" Content="Start Game" Background="DarkRed" Foreground="Yellow" Height="91" Margin="284,378,262,0" VerticalAlignment="Top" Click="btnStartGame_Click" FontFamily="Segoe UI Black" FontSize="48"/>
+        <Label x:Name="lblTitle" Content="Blackjack!" Foreground="Yellow" Canvas.Left="30" Canvas.Top="129" FontFamily="Rockwell Extra Bold" Height="171" Width="802" FontSize="120 " Margin="48,212,24,379"/>
+        <Canvas x:Name="player1Canvas" HorizontalAlignment="Left" Height="255" Margin="22,372,-22,0" VerticalAlignment="Top" Width="874">
+            <Image x:Name="playerCard0" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="121" Stretch="Fill" Canvas.Left="14" Canvas.Top="39" />
+            <Image x:Name="playerCard1" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="122" Stretch="Fill" Canvas.Left="157" Canvas.Top="39" />
+            <Image x:Name="playerCard2" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="122" Stretch="Fill" Canvas.Left="305" Canvas.Top="39" />
+            <Image x:Name="playerCard3" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="122" Stretch="Fill" Canvas.Left="456" Canvas.Top="39" />
+            <Image x:Name="playerCard4" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="122" Stretch="Fill" Canvas.Left="601" Canvas.Top="39" />
+            <Image x:Name="playerCard5" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="122" Stretch="Fill" Canvas.Left="742" Canvas.Top="39" />
+        </Canvas>
+        <Canvas x:Name="dealerCanvas" HorizontalAlignment="Left" Height="255" Margin="22,78,-22,0" VerticalAlignment="Top" Width="874">
+            <Image x:Name="dealerCard0" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="121" Stretch="Fill" Canvas.Left="14" Canvas.Top="39" />
+            <Image x:Name="dealerCard1" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="122" Stretch="Fill" Canvas.Left="157" Canvas.Top="39" />
+            <Image x:Name="dealerCard2" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="122" Stretch="Fill" Canvas.Left="305" Canvas.Top="39" />
+            <Image x:Name="dealerCard3" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="122" Stretch="Fill" Canvas.Left="456" Canvas.Top="39" />
+            <Image x:Name="dealerCard4" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="122" Stretch="Fill" Canvas.Left="601" Canvas.Top="39" />
+            <Image x:Name="dealerCard5" HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="122" Stretch="Fill" Canvas.Left="742" Canvas.Top="39" />
+        </Canvas>
+        <Label x:Name="lblHand" Content="Label" HorizontalAlignment="Left" Foreground="Yellow" Margin="22,632,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="48" Height="77" Width="250"/>
+        <Button x:Name="btnHit" Content="Hit" Background="DarkRed" Foreground="Yellow" HorizontalAlignment="Left" Margin="624,632,0,0" VerticalAlignment="Top" Width="109" Height="77" FontFamily="Segoe UI Black" FontSize="36" Click="btnHit_Click" RenderTransformOrigin="0.743,0.701"/>
+        <Button x:Name="btnStand" Content="Hold" Background="DarkRed" Foreground="Yellow" HorizontalAlignment="Left" Margin="756,632,0,0" VerticalAlignment="Top" Width="118" Height="77" FontFamily="Segoe UI Black" FontSize="36" Click="btnStand_Click"/>
+        <Label x:Name="lblDealerScore" Content="DScore" Foreground="Yellow" HorizontalAlignment="Left" Margin="366,15,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="36"/>
+        <Label x:Name="lblPlayerScore" Content="PScore" Foreground="Yellow" HorizontalAlignment="Left" Margin="366,651,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="36"/>
+    </Grid>
+</Window>

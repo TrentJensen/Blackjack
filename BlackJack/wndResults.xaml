@@ -1,0 +1,14 @@
+﻿<Window x:Class="BlackJack.wndResults"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlackJack"
+        mc:Ignorable="d"
+        Title="wndResults" Height="300"  Width="300" Background="DarkRed">
+    <Grid>
+        <Button x:Name="btnPlay" Content="Play Again" HorizontalAlignment="Left" Margin="70,200,0,0" VerticalAlignment="Top" Width="152" Height="45" FontFamily="Segoe UI Black" FontSize="24" Click="btnPlay_Click"/>
+        <Label x:Name="lblResult" Content="Label" Foreground="Yellow" HorizontalAlignment="Center" Margin="20,10,19,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="36" Height="135" Width="253" HorizontalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
